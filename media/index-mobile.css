@@ -1,0 +1,269 @@
+body,p{
+		margin: 0px;
+	}
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  border-radius: 15px;
+
+}
+
+.continue{
+  text-align: right;
+  padding: 10px;
+}
+#popupfoot {
+    text-align: right;
+    float: right;
+    display: block;
+ 
+  font-family: 'Segoe UI Light', sans-serif;
+    background: #0165a7;
+}
+.pop-head {
+    background: #0165a7;
+    color: white;
+    padding: 30px 10px 20px 10px;
+}
+.left{
+  padding: 10px;
+}
+#boxes #dialog {
+  width:600px; 
+  height:auto;
+  padding:0px;
+  background-color:#ffffff;
+  font-size: 15pt;
+   border-radius: 0;
+
+}
+
+.close{
+  color: white !important;
+  text-decoration: none;
+  text-align: right;
+}	
+.row-a1 {
+    position: absolute;
+    background: #eeedef;
+    width: 100%;
+    height: 169px;
+    z-index: -10;
+    top: 0
+}
+.row{
+	display:block;
+	max-width:1013px;
+	width: 100%;
+	padding: 0px; 
+	margin:0 auto;
+	margin-top: 50px;
+}
+.main-column {
+    float: left;
+    position: relative;
+    display: block;
+}
+.column-1{
+	display: block;
+	width: 400px;
+	background: #d8d8d8;
+	height: 500px;
+	float: left;
+}
+.column-1-content{
+	width: 400px;
+	position: absolute;
+	background: #ffffff;
+	    top: 130px;
+    padding: 20px;
+
+	font-size: 22px;
+	font-weight: bold;
+	color: #0165a7;
+	border-bottom:15px solid #0165a7;
+	left: 20%; 
+	right: 0;
+	z-index: 10;
+}
+.column-2 {
+    height: 150px;
+    width: 155px;
+    background-color: #d8d8d8;
+    float: left;
+    margin-left: 32px;
+    margin-top: 199px;
+}
+.column-2-content-block1{
+	background-color: white;
+	padding: 10px 10px 10px 0;
+	text-align: left;
+	font-size: 22px;
+	font-weight: bold;
+}
+.column-2-content-block2{
+	background: #d8d8d8;
+	height: 150px;
+}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+
+	.row{
+		width: 90%;
+	}
+	.column-1 {
+    display: block;
+    width: 29%;
+    background: #d8d8d8;
+    height: 500px;
+    float: left;
+	}
+	.main-column {
+    float: left;
+    position: relative;
+    display: block;
+    width: 69%;
+}
+    .window{
+        top: 116.5px !important;
+    }
+	.column-2 {
+     height: 166px;
+
+    width: 100%;
+    background: white;
+    float: left;
+    display: inline-block;
+     margin-left: 0px; 
+     margin-top: 0px; 
+}
+	
+	.column-2-content-block1 {
+    background-color: white;
+    padding: 50px;
+    text-align: left;
+    width: 55%;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    display: block;
+    float: left;
+}
+	.column-2-content-block2 {
+    background: #d8d8d8;
+    height: 120px;
+    display: block;
+    float: left;
+    width: 20%;
+    margin: 20px 15px 15px 15px;
+    vertical-align: middle;
+}
+	.column-1-content {
+    width: 200px;
+    position: absolute;
+    background: #ffffff;
+    top: 500px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0165a7;
+    border-bottom: 15px solid #0165a7;
+    left: 48px;
+    right: 0;
+    /* bottom: 0; */
+    z-index: 10;
+		}
+
+#mask{width: 100% !important;}
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+		
+	.row{
+		margin-top: 0px;
+	}
+	.column-1 {
+    display: block;
+    width: 100%;
+    background: #d8d8d8;
+    height: 200px;
+    float: none;
+}
+	.main-column {
+    float: none;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#mask{width: 100% !important;}
+
+  .window{
+        top: 116.5px !important;
+    }
+    #boxes #dialog{
+        width: 90%
+    }
+    #popupfoot {
+    text-align: right;
+    float: right;
+    display: block;
+    background: #0165a7;
+    width: 100%;
+
+
+  font-family: 'Segoe UI Light', sans-serif;
+}       
+	.column-2 {
+     height: 166px;
+
+    width: 100%;
+    background: white;
+    float: left;
+    display: inline-block;
+     margin-left: 0px; 
+     margin-top: 0px; 
+}
+	
+	.column-2-content-block1 {
+    background-color: white;
+    padding: 50px;
+    text-align: left;
+    width: 60%;
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    display: block;
+    float: left;
+}
+	.column-2-content-block2 {
+    background: #d8d8d8;
+    height: 120px;
+    display: block;
+    float: left;
+    width: 20%;
+    margin: 20px 15px 15px 15px;
+    vertical-align: middle;
+}
+.column-1-content {
+       right: 0;
+    left: auto;
+    top:60px;
+		}
+}
+
